@@ -11,4 +11,6 @@
     docker-username: {{ $secrets.DOCKER_USERNAME }}
     # Password for docker username
     docker-password: {{ $secrets.DOCKER_PASSWORD }}
+    # ssh ip
+    ssh_host: 160.187.167.92
           
