@@ -1,16 +1,15 @@
-  - name: CI - Docker: Build and Push action 
-  # You may pin to the exact commit or the version.
-  # uses: NRO04/docker-build-push-action@a90e5a1ebe1647c2f47b700a3ec34ddf409c6de4
+- name: CI - Docker: Build and Push action
   uses: NRO04/docker-build-push-action@v2
   with:
-    # Name of repository
-    name-repository: 
-    # Tag for repository
-    tag: 
-    # Put docker user name here
-    docker-username: {{ $secrets.DOCKER_USERNAME }}
-    # Password for docker username
-    docker-password: {{ $secrets.DOCKER_PASSWORD }}
-    # ssh ip
+    # Name of the repository (e.g., username/app-name)
+    name-repository: your-dockerhub-username/your-app-name
+
+    # Tag for the image (e.g., latest or from a GitHub variable)
+    tag: latest
+
+    # Docker Hub credentials
+    docker-username: ${{ secrets.DOCKER_USERNAME }}
+    docker-password: ${{ secrets.DOCKER_PASSWORD }}
+
+    # SSH host (optional)
     ssh_host: 160.187.167.92
-          
