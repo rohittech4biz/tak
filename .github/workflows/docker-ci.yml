@@ -27,7 +27,7 @@ jobs:
         uses: NRO04/docker-build-push-action@v2
         with:
           # Your Docker Hub repository name
-          name-repository: ${{ secrets.DOCKER_USERNAME }/nginx
+          name-repository: ${{ secrets.DOCKER_USERNAME }}/nginx
 
           # Image tag (use 'latest' or Git commit SHA for versioning)
           tag: latest
