@@ -8,7 +8,7 @@
     # Tag for repository
     tag: 
     # Put docker user name here
-    docker-username: DOCKER
+    docker-username: {{ $secrets.DOCKER_USERNAME }}
     # Password for docker username
-    docker-password: 
+    docker-password: {{ $secrets.DOCKER_PASSWORD }}
           
